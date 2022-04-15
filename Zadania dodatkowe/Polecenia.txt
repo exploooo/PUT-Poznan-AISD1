@@ -1,0 +1,115 @@
+1. Średnia ważona
+Napisz program obliczający ważoną średnią arytmetyczną dla 5 liczb całkowitych i wag (liczby rzeczywiste) wprowadzonych przez użytkownika. Użytkownik najpierw wprowadza 5 liczb, a następnie pięć wag. Wynik obliczeń ma zostać wypisany na ekran.
+
+2. Przypisanie i zamiana wartości zmiennych
+Użytkownik wprowadza wartości trzech zmiennych (np. a, b i c). Wykonaj następujące operacje:
+
+Przypisz wartość zmiennej a zmiennej c.
+Zamień wartości zmiennych a i b.
+Następnie wypisz na ekran zawartość zmiennych a, b i c oddzielone od siebie znakiem spacji.
+
+3. Modulo
+Napisz program prezentujący wynik resztę z dzielenia (modulo) liczb całkowitych.
+
+4. Ciąg liczb
+Wyświetli ciąg liczb z przedziału [a, b] z krokiem c, gdzie a, b, c są wprowadzane przez użytkownika BEZ poprzedzającego komunikatu.
+
+5. Silnia
+Wyznacz wartość n!, gdzie n jest wprowadzane przez użytkownika BEZ poprzedzającego komunikatu. Program wyświetla TYLKO wynik działania programu czyli wyliczoną wartość.
+
+6. Suma cyfr
+Wyznacz sumę cyfr liczby całkowitej x, gdzie x jest wprowadzane przez użytkownika BEZ poprzedzającego komunikatu. Program wyświetla TYLKO wynik działania programu czyli sumę cyfr liczby x.
+
+7. Szukanie elementów w tablicy
+Napisz program, który znajdzie najmniejszy element w tablicy o elementach typu int dla nieparzystych indeksów. Program wyświetla na ekran TYLKO wynik działania programu czyli najmniejszy element w tablicy.
+
+8. Test na palindrom
+Napisz program, który sprawdzi, czy podany ciąg znaków jest palindromem. Użytkownik podaje tekst jako wejście programu. Program wyświetla TYLKO wynik działania programu czyli 1 lub 0 w zależności czy podany tekst jest palindromem lub nie. W tym zadaniu można wykorzystać instrukcję "cin" oraz wpisywać tekst ze znakami spacji zamienionymi na "_" albo wykorzystać instrukcję "getline".
+
+9. Przeliczanie jednostek
+Napisz program przeliczający jednostki:
+
+    km/h na m/s,
+    m2 na cm2,
+    mg/l na ‰.
+Użytkownik wybiera typ konwersji (1, 2 lub 3). Dla każdej z trzech powyższych konwersji użytkownik podaje wartość do przeliczenia. Program następnie wypisuje wynik na ekran. W przypadku błędnego wyboru typu konwersji, program użytkownik powtarza wybór, aż wybrane zostanie 1, 2, 3 lub w przypadku wybrania 0 program wyświetla na ekran ciąg wyrazów "Bye, bye!" i kończy działanie. W przypadku podania przez użytkownika nieprawidłowej liczby do przeliczenia, program wyświetla komunikat "Wrong input data!" i kończy działanie.
+
+10. Duży lotek
+Napisz program, który realizuje grę w dużego lotka. Program wczytuje ziarno generatora pseudolosowego (seed) oraz 6 liczb do tablicy typu int z przedziału [1, 49]. W przypadku wprowadzenia liczby spoza przedziału, użytkownik wprowadza ponownie liczbę aż do momentu podania prawidłowej liczby. Program NIE wyświetla komunikatu o źle wprowadzonej liczbie. Liczby wprowadzone przez użytkownika nie mogą się powtarzać. W przypadku powtórzenia, użytkownik wprowadza ponownie liczbę aż do momentu podania prawidłowej liczby. Program NIE wyświetla komunikatu o źle wprowadzonej liczbie. Następnie, program losuje liczby z przedziału [1, 49] tak aby się nie powtarzały i porównuje je z liczbami wprowadzonymi przez użytkownika. Program wyświetla TYLKO liczbę "trafień" tzn. liczbę takich samych liczb wprowadzonych przez użytkownika i wylosowanych przez komputer.
+
+11. Zapis daty
+Napisz program, który prosi użytkownika o wprowadzenie daty i godziny, sprawdza, czy wprowadzona data jest poprawna (zakres lat 1800-2200), a na końcu wyświetla datę w formacie: "Podana data: DD.MM.RRRR, podana godzina: gg:mm", gdzie DD, MM, gg, mm oznaczają odpowiednio dzień, miesiąc, godzina i minuta w formacie dwucyfrowym, a RRRR oznacza rok w formacie czterocyfrowym. Każdy skłądnik daty i godziny ma być wprowadzany w postaci liczby typu int. W przypadku podania błędnego składnika daty, program prosi użytkownika o ponowne wprowadzenie składnika.
+
+12. Nakładanie się sekwencji bitowych
+Napisz program, który zlicza wystąpienie sekwencji bitowej 101 w drugiej sekwencji podanej przez użytkownika w formacie liczby typu int. Sekwencje mogą się nakładać. Program ma wyświetlić TYLKO liczbę wystąpień sekwencji. Np. dla podanej przez użytkownika liczby -1461071188 wynik wyniesie "7".
+
+13. Odległość Hamminga i negowanie co drugiego zera
+Napisz program, który zawiera minimum dwie funkcje wykorzystujące operacje bitowe.
+
+Pierwsza funkcja ma zwracać oraz wypisywać na ekran odległość Hamminga pomiędzy dwoma liczbami typu int podanymi jako argumenty funkcji. Odległość Hamminga jest to liczba bitów, na których różnią się dwa ciągi bitowe. Przykładowo, odległość Hamminga pomiędzy liczbami 4 (binarnie 0000 0000 0000 0000 0000 0000 0000 0100) i 5 (binarnie 0000 0000 0000 0000 0000 0000 0000 0101) wynosi 1.
+
+Druga funkcja ma negować co drugie zero w sekwencji bitowej (zmienna typu int) rozpoczynając od najbardziej znaczącego bitu sekwencji. Użytkownik podaje sekwencję bitową w postaci liczby integer. Np. dla int a = 5 (0000 0000 0000 0000 0000 0000 0000 0101) wynik wyniesie 0101 0101 0101 0101 0101 0101 0101 0111.
+
+Należy również napisać program demonstrujący działanie napisanych funkcji. Użytkownik w pierwszym kroku podaje liczbę typu short int określającą numer funkcji do wywołania (numeracja jak powyżej, szablon gotowy). Następnie użytkownik wprowadza liczby typu int wymagane przez funkcje. Liczby te są podawane jako argumenty wybranej funkcji. Program ma wyświetlać w przypadku pierwszej funkcji TYLKO obliczoną odległość Hamminga, a w przypadku drugiej funkcji TYLKO zmodyfikowaną sekwencję bitową.
+
+14. Potęga dwójki
+Napisz funkcję, wykorzystującą operacje bitowe, która sprawdza czy liczba typu unsigned int podana jako argument funkcji jest potęgą 2. Funkcja zwraca zmienną typu bool.
+
+15. Liczebność populacji dzięciołów
+Liczebność populacji dzięciołów na początku roku n = 0 oznaczona jest jako p0. W każdym roku n liczebność populacji dzięciołów wzrasta o 20% populacji z roku n-1. Co trzy lata połowa bieżącej populacji dzięciołów (na koniec roku) ginie z powodu choroby. Napisz funkcję zwracającą liczebność populacji dzięciołów na początku roku n, gdzie n jest liczbą typu int i jednocześnie argumentem funkcji. Ponadto argumentem funkcji jest p0. W przypadku, gdy wyznaczona liczba populacji nie jest liczbą całkowitą, tuż przed zwróceniem wartości należy zaokrąglić ją używając funkcji round(double) z biblioteki cmath.
+
+16. Sposoby wyrażenia liczby naturalnej
+Napisz program rekurencyjny znajdujący liczbę wszystkich sposobów wyrażenia liczby naturalnej N w postaci sumy składników naturalnych.  Przykładowo dla N = 5 mamy
+5, 4 + 1, 3 + 2, 3 + 1 + 1, 2 + 2 + 1, 2 + 1 + 1 + 1, 1 + 1 + 1 + 1 + 1
+
+17. Maszyna Turinga - modyfikacja co trzeciego zera
+Jednotaśmowa, deterministyczna maszyna Turinga posługuje się alfabetem {0, 1, #}, gdzie symbol # oznacza symbol pusty. Narysuj graf maszyny Turinga, która co trzecie 0 zapisane na taśmie przed rozpoczęciem pracy maszyny zamienia na 1. Analizowany fragment taśmy ograniczony jest symbolami #. Stan taśmy przed rozpoczęciem pracy przez maszynę może więc wynosić np. #001101110101#. W takim przypadku stan taśmy po zakończeniu pracy ma wynosić #001111110101#. Głowica maszyny przed rozpoczęciem jej pracy jest ustawiona nad pierwszym symbolem niebędącym symbolem pustym od lewej strony taśmy. Głowica maszyny w stanie końcowym ma zostać ustawiona nad symbolem następującym po symbolu # kończącym analizowaną sekwencję.
+
+18. Sortowanie tablicy - metoda Shella
+Napisz funkcję, która wykorzystując sortowanie Shella posortuje jednowymiarowej tablicę typu int malejąco. Funkcja jako argumenty wejściowe przyjmuje tablicę oraz jej rozmiar.
+
+W funkcji main() proszę zadeklarować tablicę o rozmiarze 20. Elementy tablicy są wprowadzane przez użytkownika BEZ poprzedzającego komunikatu. Program w funkcji main() wyświetla TYLKO elementy posortowanej tablicy oddzielone spacją.
+
+19. Sortowanie tablicy - quicksort
+Napisz funkcję, która wykorzystując sortowanie szybkie (quicksort) posortuje tablicę typu double malejąco.
+W funkcji main() proszę zadeklarować tablicę o rozmiarze 20. Elementy tablicy są wprowadzane przez użytkownika BEZ poprzedzającego komunikatu. Program w funkcji main() wyświetla TYLKO elementy posortowanej tablicy oddzielone spacją.
+
+20. Sortowanie tablicy - mergesort
+Napisz funkcję, która wykorzystując sortowanie przez scalanie (mergesort) posortuje tablicę typu double malejąco.
+W funkcji main() proszę zadeklarować tablicę o rozmiarze 20. Elementy tablicy są wprowadzane przez użytkownika BEZ poprzedzającego komunikatu. Program w funkcji main() wyświetla TYLKO elementy posortowanej tablicy oddzielone spacją.
+
+21. Kopiec binarny  - sortowanie tablicy typu char
+Napisz funkcję, która wykorzystując sortowanie przez kopcowanie posortuje jednowymiarową tablicę typu char rosnąco. Funkcja jako argumenty wejściowe przyjmuje tablicę oraz jej rozmiar.
+
+W funkcji main() proszę zadeklarować tablicę o rozmiarze 10. Elementy tablicy są wprowadzane przez użytkownika BEZ poprzedzającego komunikatu. Program w funkcji main() wyświetla TYLKO elementy posortowanej tablicy oddzielone spacją.
+
+Przykładowo dla danych wejściowych "3 J i L g / Z K ? 4 u R D q _ ^ j l 5 v a" program powinien wypisać na ekran "/ 4 5 ? D J K L R Z ^ _ a g i j l q u v".
+
+22. Kodowanie mieszające z sondowaniem liniowym
+Napisz dwie funkcje, które używają kodowania mieszającego i systemu pozycyjnego o podstawie 128 dla trzyliterowych wyrazów.
+
+Pierwsza funkcja wstawia element (wyraz) do tablicy. Funkcja przyjmuje jako argumenty wejściowe tablicę typu string, jej rozmiar oraz element typu string, który należy wstawić do tablicy. W przypadku kolizji funkcja używa sondowania liniowego.
+
+Druga funkcja usuwa element z tablicy mieszającej używającej sondowania liniowego. Oprócz tablicy i jej rozmiaru, funkcja przyjmuje indeks elementu do usunięcia jako argument wejściowy.
+
+W funkcji main() zdefiniuj rozmiar tablicy M = 97. Do kodowania użyj systemu pozycyjnego o podstawie 128 oraz kodów ASCII liter. Użytkownik wprowadza 15 wyrazów BEZ poprzedzającego komunikatu. Każdy wyraz bezpośrednio po jego wprowadzeniu jest wstawiany do tablicy. Następnie użytkownik wprowadza 10 indeksów elementów, które mają być usunięte z tablicy. Elementy te są usuwane bezpośrednio po ich wprowadzeniu. Program w funkcji main() wyświetla TYLKO zawartość tablicy. Elementy tablicy mają być oddzielone od siebie znakami pustymi.
+
+23. IEEE 754
+Napisz funkcję, która jako argument wejściowy przyjmuje zmienną typu string przechowującą ciąg 8 liczb szesnastkowych. Zmienna typu string przechowuje liczbę zmiennoprzecinkową zapisaną w standardzie IEEE 754. Funkcja zwraca zmienną typu float o wartości wynikającej z reprezentacji w tym standardzie. W funkcji main() użytkownik wprowadza zmienną typu string BEZ poprzedzającego komunikatu. Program wyświetla TYLKO wynik działania funkcji. Sprawdzanie poprawności danych wprowadzanych przez użytkownika JEST wymagane.
+
+24. Maszyna Turinga - detekcja trójek bitów
+Jednotaśmowa, deterministyczna maszyna Turinga posługuje się alfabetem {0, 1, #}, gdzie symbol # oznacza symbol pusty. Narysuj graf maszyny Turinga, która przechodzi do stanu ACCEPT, gdy wykryje dwie trójki bitów 010 zapisane na taśmie. Trójki bitów mogą się nakładać. W przypadku braku pary trójek bitów maszyna przechodzi do stanu REJECT. Analizowany fragment taśmy ograniczony jest symbolami #. Głowica maszyny przed rozpoczęciem jej pracy jest ustawiona nad pierwszym symbolem niebędącym symbolem pustym od lewej strony taśmy. Głowica maszyny w stanie końcowym ma zostać ustawiona nad symbolem następującym po symbolu # kończącym analizowaną sekwencję.
+
+25. Maszyna Turinga - palindrom
+Jednotaśmowa, deterministyczna maszyna Turinga posługuje się alfabetem {0, 1, #}, gdzie symbol # oznacza symbol pusty. Narysuj graf maszyny Turinga, która przechodzi do stanu ACCEPT, gdy wykryje palindrom zapisany na taśmie. Analizowany fragment taśmy ograniczony jest symbolami #. Głowica maszyny przed rozpoczęciem jej pracy jest ustawiona nad pierwszym symbolem niebędącym symbolem pustym od lewej strony taśmy. Głowica maszyny w stanie końcowym ma zostać ustawiona nad symbolem następującym po symbolu # kończącym analizowaną sekwencję.
+
+26. Kopiec binarny  - szukanie ścieżki o maksymalnej wartości
+Napisz funkcję, która sprawdza czy istnieje ścieżka wiodąca od korzenia kopca do jednego z jego liści o takiej własności, że suma elementów przechowywanych w każdym węźle ścieżki jest mniejsza lub równa argumentowi funkcji.
+
+W funkcji main() proszę stworzyć kopiec przechowujący 20 elementów. Elementy są wprowadzane przez użytkownika BEZ poprzedzającego komunikatu i w tej samej kolejności wstawiane do kopca. Program w funkcji main() wyświetla TYLKO komunikat "Yes", gdy w kopcu istnieje ścieżka o powyżej opisanej właściwości lub "No" w przeciwnym przypadku.
+
+27. Kopiec binarny  - wstawianie i usuwanie elementów
+Napisz funkcję, która wstawia do kopca z największą wartością w korzeniu X zmiennych typu double wprowadzanych przez użytkownika. X jest podawane jako argument funkcji. Maksymalny rozmiar kopca to 32.
+
+W funkcji main() użytkownik wprowadza BEZ poprzedzającego komunikatu liczbę elementów, które chce wpisać do kopca. Następnie elementy wprowadzane są przez użytkownika i wstawiane do kopca. Na końcu usuwany jest korzeń kopca. Program w funkcji main() wyświetla TYLKO kolejne elementy tablicy reprezentującej kopiec oddzielone spacją.
+
